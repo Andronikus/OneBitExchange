@@ -1,5 +1,5 @@
 body {
-    background: image-url("/background-img.jpg") no-repeat center center fixed;
+    background: image-url("/background-img2.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -12,23 +12,21 @@ body {
    
    
   .title-box{
-    margin-top: 20%;
-   
+    color: white;
     .title{
-      color: white;
       text-shadow: 2px 0px 2px #000000;
+      text-transform: capitalize;
+      font-size: 100px;
     }
-   
     .subtitle{
-      color: white;
       text-shadow: 3px 0px 3px #000000;
       font-size: 30px;
+      margin-top: 10px;
       margin-left: 10px;
       margin-right: 10px;
     }
   }
-   
-   
+
   .exchange_box{
     margin: 10px auto;
     .logo-box{

@@ -18,12 +18,28 @@
         color: #878d99;
         font-weight: 700;
       }
- 
+
+      .small-title {
+        font-weight: 500;
+        margin-bottom: 0;
+        color: #878d99; 
+      }
+
+      .button-group {
+        margin-bottom: 0rem;
+      }
+
       .btn-exchange{
         background-color: #5bc0de;
         border-color: #5bc0de;
-        border-radius: 0;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
       }
+
+      .btn-exchange:active{
+        transform: translateY(2px);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+      }
+
     }
   }
 }
