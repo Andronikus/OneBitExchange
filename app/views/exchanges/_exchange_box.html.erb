@@ -5,7 +5,7 @@
     </div>
  
     <div class='card-block'>
-      <%= form_tag(id: 'exchange_form') do %>
+      <%= form_tag('/convert', method: :get, id: 'exchange_form') do %>
         <div class='local_currency'>
           <div class='form-group'>
             <p class='title'>Amount</p>

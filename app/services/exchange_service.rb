@@ -2,9 +2,10 @@ require 'rest-client'
 require 'json'
 
 class ExchangeService
-    def initialize(source_currency, target_currency)
+    def initialize(source_currency, target_currency, amount)
       @source_currency = source_currency
       @target_currency = target_currency
+      @amount = amount
     end
 
     def perform
@@ -14,6 +15,7 @@ class ExchangeService
           url = "#{exchange_api_url}?token=#{exchange_api_key}&currency=#{@source_currency}/#{@target_currency}"
           res = RestClient.get url
           value = JSON.parse(res.body)['currency'][0]['value'].to_f
+          @amount*value
         rescue RestClient::ExceptionWithResponse => e
           e.response
         end
